@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms</title>
+  <style>
+    
+  /* Body setup */
+  body {
+    background-color: white; /* White background */
+    font-family: Arial, sans-serif;
+    color: black; /* Black text */
+    padding: 20px;
+  }
+  h1{
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+  /* Form container */
+  form {
+    max-width: 500px;
+    margin: auto; /* Center align the form */
+    padding: 20px;
+    border: 1px solid #000; /* Black border */
+    background-color: #fff; /* White background inside form */
+  }
+
+  /* Each input group */
+  div {
+    margin-bottom: 15px;
+  }
+
+  /* Labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  /* Text inputs, password, tel, date, select, textarea */
+  input[type="text"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000;
+    background-color: white;
+    color: black;
+  }
+
+  /* Radio buttons and checkboxes inline */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  /* Submit button styling */
+  button[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #333; /* Slight hover effect */
+  }
+</style>
+
+</head>
+<body>
+  <h1>forms</h1>
+
+  <div>
+  <form action="data.csv">
+  <label for="name">name</label>
+  <input id="name" type="text" placeholder="enter your name" required>
+ </div>
+ <div>
+  <label for="ph">phone</label>
+  <input id="ph" type="tel" placeholder="enter number" required>
+ </div>
+ <div>
+  <label for="pass">password</label>
+  <input type="password" id="pass" placeholder="enter the password" required>
+ </div>
+ <div>
+  <label for="date">date</label>
+  <input type="date" required>
+ </div>
+ <div>
+  <label for="gender">Gender</label>
+  <select id="gender" required>
+    <option value="" disabled selected>select gender</option>
+    <option value="male">Male</option>
+    <option value="female">female</option>
+    <option value="others">others</option>
+  </select>
+ </div>
+ <div>
+  <p>suscription name</p>
+  <label for="vip">vip</label>
+  <input type="radio" id="vip" name="suscription name">
+  <label for="basic">BASIC</label>
+  <input type="radio" id="basic" name="suscription name">
+ </div>
+ <div></div>
+ <label for="comments">comments</label>
+ <textarea id="comments" placeholder="enter the comments" rows="4"></textarea>
+ </div>
+<div>
+  <label for="terms">i agree</label>
+  <input type="checkbox"  id="terms" required>
+</div>
+<div>
+  <button type="submit">sumbit</button>
+</div>
+  </form>
+</form>
+</body>
+</html>
